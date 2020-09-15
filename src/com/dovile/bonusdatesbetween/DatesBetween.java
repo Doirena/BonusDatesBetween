@@ -7,7 +7,7 @@ public class DatesBetween {
 
     static void printBonusDatesBetween(int fromYear, int toYear) {
 
-        if (String.valueOf(fromYear).length() == 4 && String.valueOf(toYear).length() == 4 && fromYear < toYear) {
+        if (String.valueOf(fromYear).length() == 4 && String.valueOf(toYear).length() == 4 && fromYear <= toYear) {
 
             while (fromYear <= toYear) {
                 //Make Years to string
@@ -65,6 +65,6 @@ public class DatesBetween {
 
 
     public static void main(String[] args) {
-        printBonusDatesBetween(1000, 9999);
+        printBonusDatesBetween(1000, 1200);
     }
 }
